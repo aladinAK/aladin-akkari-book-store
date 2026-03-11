@@ -387,7 +387,7 @@ function TomeCard({ tome, index }: { tome: (typeof tomes)[0]; index: number }) {
 
       {/* Status */}
       <span
-        className={`text-[10px] tracking-[0.4em] font-sans mb-6 ${isPrep ? "text-steel" : "text-ruby-bright"}`}
+        className={`text-[10px] tracking-[0.4em] font-sans mb-1 ${isPrep ? "text-steel" : "text-ruby-bright"}`}
       >
         {tome.status.toUpperCase()}
       </span>
@@ -435,7 +435,7 @@ function LesTomes() {
   return (
     <Section id="les-tomes" className="py-32">
       <motion.div variants={fadeUp} className="mb-16">
-        <p className="text-xs tracking-[0.5em] text-ruby-bright mb-4 font-sans">LA SAGA</p>
+        <p className="text-xs tracking-[0.5em] text-ruby-bright font-sans">LA SAGA</p>
         <h2
           className="font-serif font-black text-parchment leading-none"
           style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
@@ -465,7 +465,7 @@ function LUnivers() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         {/* Text */}
         <div>
-          <motion.p variants={fadeIn} className="text-xs tracking-[0.5em] text-ruby-bright mb-4 font-sans">
+          <motion.p variants={fadeIn} className="text-xs tracking-[0.5em] text-ruby-bright font-sans">
             L'UNIVERS
           </motion.p>
           <motion.h2
@@ -643,7 +643,7 @@ function LesPersonnages() {
   return (
     <Section id="personnages" className="py-32">
       <motion.div variants={fadeUp} className="mb-16">
-        <p className="text-xs tracking-[0.5em] text-ruby-bright mb-4 font-sans">LE BESTIAIRE HUMAIN</p>
+        <p className="text-xs tracking-[0.5em] text-ruby-bright font-sans">LE BESTIAIRE HUMAIN</p>
         <h2
           className="font-serif font-black text-parchment leading-none"
           style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
@@ -712,7 +712,7 @@ function LAuteur() {
 
         {/* Text */}
         <div className="order-1 lg:order-2">
-          <motion.p variants={fadeIn} className="text-xs tracking-[0.5em] text-ruby-bright mb-4 font-sans">
+          <motion.p variants={fadeIn} className="text-xs tracking-[0.5em] text-ruby-bright font-sans">
             L'AUTEUR
           </motion.p>
           <motion.h2
