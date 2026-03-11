@@ -282,7 +282,7 @@ function Hero() {
         {/* CTA */}
         <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="https://www.amazon.ca/s?k=chroniques+de+jez+akkari"
+            href="https://www.amazon.ca/Aladin-Akkari-ebook/dp/B0G3XJ9QHV/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-ruby text-sm tracking-[0.3em] px-10 py-4 text-ruby-bright font-sans"
@@ -332,7 +332,7 @@ const tomes = [
     resume:
       "Jez, un petit voleur sans histoire, dérobe une épée légendaire et se retrouve plongé malgré lui dans un complot qui le dépasse. Jeté en prison avec Marv, un guerrier brutal, l'arme semble posséder une volonté propre.",
     status: "Disponible",
-    link: "https://www.amazon.ca/s?k=chroniques+de+jez+akkari+tome+1",
+    link: "https://www.amazon.ca/Aladin-Akkari-ebook/dp/B0G3XJ9QHV/",
   },
   {
     number: "II",
@@ -340,7 +340,7 @@ const tomes = [
     resume:
       "En fuite à travers le royaume, Jez découvre que l'épée l'entraîne vers un destin royal dont il ne veut pas. Il s'allie avec Oslo, un capitaine déchu, alors que les flammes de la rébellion embrasent le pays.",
     status: "Disponible",
-    link: "https://www.amazon.ca/s?k=chroniques+de+jez+akkari+tome+2",
+    link: "https://www.amazon.ca/-/fr/Aladin-Akkari-ebook/dp/B0GCK5T59R",
   },
   {
     number: "III",
@@ -348,7 +348,7 @@ const tomes = [
     resume:
       "Le voyage mène le trio jusqu'à la cité d'Ara où les vérités éclatent : l'épée est le fruit d'un pacte démoniaque avec les dieux de la Mort. Jez doit accepter de devenir l'héritier d'une malédiction.",
     status: "Disponible",
-    link: "https://www.amazon.ca/s?k=chroniques+de+jez+akkari+tome+3",
+    link: "https://www.amazon.ca/-/fr/Aladin-Akkari-ebook/dp/B0GRC8PPGC",
   },
   {
     number: "IV",
@@ -766,7 +766,7 @@ function Footer() {
           </a>
           
           <a
-            href="https://www.amazon.ca/s?k=chroniques+de+jez+akkari"
+            href="https://www.amazon.ca/Aladin-Akkari-ebook/dp/B0G3XJ9QHV/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-steel hover:text-ruby-bright transition-colors duration-300"
