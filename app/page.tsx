@@ -261,7 +261,7 @@ function Hero() {
         <motion.h1
           variants={fadeUp}
           className="font-serif text-center font-black leading-[0.85] text-parchment mb-6"
-          style={{ fontSize: "clamp(4rem, 8vw, 7rem)" }}
+          style={{ fontSize: "clamp(2.5rem, 8vw, 7rem)" }}
         >
           LES
           <br />
