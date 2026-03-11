@@ -252,7 +252,7 @@ function Hero() {
         {/* Pre-title */}
         <motion.p
           variants={fadeIn}
-          className="text-xs tracking-[0.5em] text-ruby-bright mb-8 font-sans font-light"
+          className="text-xs tracking-[0.5em] text-ruby-bright mb-4 font-sans font-light"
         >
           ALADIN AKKARI · DARK FANTASY
         </motion.p>
