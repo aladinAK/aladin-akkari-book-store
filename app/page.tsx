@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { BookOpen, ChevronDown, ExternalLink, Mail, Instagram } from "lucide-react";
 
@@ -364,6 +364,8 @@ function TomeCard({ tome, index }: { tome: (typeof tomes)[0]; index: number }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-15% 0px" });
   const isPrep = tome.status === "En préparation";
+  const blurred = index > 0;
+  const [revealed, setRevealed] = useState(false);
 
   return (
     <motion.div
@@ -404,9 +406,24 @@ function TomeCard({ tome, index }: { tome: (typeof tomes)[0]; index: number }) {
       <div className="w-8 h-px bg-ruby/50 mb-5" />
 
       {/* Summary */}
-      <p className="font-sans text-sm leading-relaxed text-steel-mist flex-1">
-        {tome.resume}
-      </p>
+      <div className="relative flex-1">
+        <p
+          className="font-sans text-sm leading-relaxed text-steel-mist transition-all duration-500"
+          style={blurred && !revealed ? { filter: "blur(5px)", userSelect: "none" } : {}}
+        >
+          {tome.resume}
+        </p>
+        {blurred && !revealed && (
+          <button
+            onClick={() => setRevealed(true)}
+            className="absolute inset-0 flex items-center justify-center"
+          >
+            <span className="text-[10px] tracking-[0.35em] text-parchment font-sans border border-parchment/20 px-4 py-2 bg-obsidian/80 hover:border-ruby/50 hover:text-ruby-bright transition-all duration-300">
+              LIRE LE RÉSUMÉ
+            </span>
+          </button>
+        )}
+      </div>
 
       {/* Link */}
       {!isPrep && tome.link && (
